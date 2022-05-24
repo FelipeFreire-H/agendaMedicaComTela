@@ -36,7 +36,7 @@ public class LoginController {
         usuario.setSenha(senha);
 
         if (validarCampos(usuario)) {
-            //consultar DAO
+            //consultar DAO -- somente para teste
             
             JOptionPane.showMessageDialog(null, "Login com sucesso");
 
