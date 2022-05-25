@@ -17,7 +17,9 @@ public class TelaLogin extends javax.swing.JFrame {
      * Creates new form TelaLogin
      */
     public TelaLogin() {
+        
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -39,6 +41,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TELA DE LOGIN");
+        setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Login"));
         jPanel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -58,7 +61,7 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Senha:");
 
         txtbotaoLogin.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
