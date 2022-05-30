@@ -32,7 +32,7 @@ public class TelaCastroCidade extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        txtDescricaoCadastraBairro = new javax.swing.JTextField();
+        txtDescricaoCadastraCidade = new javax.swing.JTextField();
 
         setVerifyInputWhenFocusTarget(false);
 
@@ -46,9 +46,9 @@ public class TelaCastroCidade extends javax.swing.JPanel {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        txtDescricaoCadastraBairro.addActionListener(new java.awt.event.ActionListener() {
+        txtDescricaoCadastraCidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDescricaoCadastraBairroActionPerformed(evt);
+                txtDescricaoCadastraCidadeActionPerformed(evt);
             }
         });
 
@@ -62,7 +62,7 @@ public class TelaCastroCidade extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDescricaoCadastraBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtDescricaoCadastraCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -75,7 +75,7 @@ public class TelaCastroCidade extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtDescricaoCadastraBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDescricaoCadastraCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -105,9 +105,9 @@ public class TelaCastroCidade extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtDescricaoCadastraBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricaoCadastraBairroActionPerformed
+    private void txtDescricaoCadastraCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricaoCadastraCidadeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDescricaoCadastraBairroActionPerformed
+    }//GEN-LAST:event_txtDescricaoCadastraCidadeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -116,6 +116,6 @@ public class TelaCastroCidade extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtDescricaoCadastraBairro;
+    private javax.swing.JTextField txtDescricaoCadastraCidade;
     // End of variables declaration//GEN-END:variables
 }
