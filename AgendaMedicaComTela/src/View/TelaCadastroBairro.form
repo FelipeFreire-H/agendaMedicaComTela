@@ -69,6 +69,7 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="botaoCadastraBairro" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="245" max="32767" attributes="0"/>
               </Group>
@@ -87,7 +88,9 @@
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="66" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="botaoCadastraBairro" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -122,6 +125,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDescricaoCadastraBairroActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="botaoCadastraBairro">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CADASTRAR"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

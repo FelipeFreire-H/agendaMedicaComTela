@@ -9,12 +9,12 @@ package View;
  *
  * @author felip
  */
-public class TelaCadastraTelefone extends javax.swing.JPanel {
+public class TelaCadastroLogradouro extends javax.swing.JPanel {
 
     /**
-     * Creates new form TelaCadastraTelefone
+     * Creates new form TelaCadastraLogradouro
      */
-    public TelaCadastraTelefone() {
+    public TelaCadastroLogradouro() {
         initComponents();
     }
 
@@ -27,28 +27,33 @@ public class TelaCadastraTelefone extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        txtNumeroTelefoneCadastraTelefone = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        txtDescricaoCadastraLogradouro = new javax.swing.JTextField();
+        txtBairroCadastraLogradouro = new javax.swing.JTextField();
+        botaoCadastraLogradouro = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastra logradouro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastra Telefone", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jLabel2.setText("DESCRIÇÃO:");
 
-        jLabel2.setText("NÚMERO:");
+        jLabel3.setText("BAIRRO:");
 
-        txtNumeroTelefoneCadastraTelefone.addActionListener(new java.awt.event.ActionListener() {
+        txtDescricaoCadastraLogradouro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNumeroTelefoneCadastraTelefoneActionPerformed(evt);
+                txtDescricaoCadastraLogradouroActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("TIPO DO TELEFONE:");
+        txtBairroCadastraLogradouro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBairroCadastraLogradouroActionPerformed(evt);
+            }
+        });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        botaoCadastraLogradouro.setText("CADASTRAR");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -60,11 +65,12 @@ public class TelaCadastraTelefone extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNumeroTelefoneCadastraTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtDescricaoCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtBairroCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoCadastraLogradouro))
                 .addContainerGap(143, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -73,13 +79,17 @@ public class TelaCadastraTelefone extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtNumeroTelefoneCadastraTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDescricaoCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                    .addComponent(txtBairroCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addComponent(botaoCadastraLogradouro)
+                .addContainerGap())
         );
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -100,17 +110,22 @@ public class TelaCadastraTelefone extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNumeroTelefoneCadastraTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroTelefoneCadastraTelefoneActionPerformed
+    private void txtDescricaoCadastraLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricaoCadastraLogradouroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNumeroTelefoneCadastraTelefoneActionPerformed
+    }//GEN-LAST:event_txtDescricaoCadastraLogradouroActionPerformed
+
+    private void txtBairroCadastraLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBairroCadastraLogradouroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBairroCadastraLogradouroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton botaoCadastraLogradouro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtNumeroTelefoneCadastraTelefone;
+    private javax.swing.JTextField txtBairroCadastraLogradouro;
+    private javax.swing.JTextField txtDescricaoCadastraLogradouro;
     // End of variables declaration//GEN-END:variables
 }

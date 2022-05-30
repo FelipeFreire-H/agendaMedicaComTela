@@ -33,6 +33,7 @@ public class TelaCadastroCep extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         txtLogradouroCadastraCep = new javax.swing.JTextField();
         txtCepCadastraCep = new javax.swing.JTextField();
+        botaoCadastraCep = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
 
@@ -54,6 +55,8 @@ public class TelaCadastroCep extends javax.swing.JPanel {
             }
         });
 
+        botaoCadastraCep.setText("CADASTRAR");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -68,7 +71,8 @@ public class TelaCadastroCep extends javax.swing.JPanel {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtLogradouroCadastraCep, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtLogradouroCadastraCep, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoCadastraCep))
                 .addContainerGap(157, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -82,7 +86,9 @@ public class TelaCadastroCep extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtLogradouroCadastraCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(botaoCadastraCep)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -117,6 +123,7 @@ public class TelaCadastroCep extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCadastraCep;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

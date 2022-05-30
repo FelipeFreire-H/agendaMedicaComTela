@@ -41,6 +41,7 @@ public class TelaCadastroFuncionario extends javax.swing.JPanel {
         txtDataAdmissaoCadastraFuncionario = new javax.swing.JFormattedTextField();
         txtDataDesligamentoCadastraFuncionario = new javax.swing.JFormattedTextField();
         txtUsuarioCadastraFuncionario = new javax.swing.JTextField();
+        botaoCadastraFuncionario = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
 
@@ -90,6 +91,13 @@ public class TelaCadastroFuncionario extends javax.swing.JPanel {
             }
         });
 
+        botaoCadastraFuncionario.setText("CADASTRAR");
+        botaoCadastraFuncionario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCadastraFuncionarioActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -120,7 +128,8 @@ public class TelaCadastroFuncionario extends javax.swing.JPanel {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtDescricaoCadastraFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtDescricaoCadastraFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoCadastraFuncionario))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -150,7 +159,9 @@ public class TelaCadastroFuncionario extends javax.swing.JPanel {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtDataDesligamentoCadastraFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(botaoCadastraFuncionario)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -187,8 +198,20 @@ public class TelaCadastroFuncionario extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDescricaoCadastraFuncionarioActionPerformed
 
+    private void botaoCadastraFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraFuncionarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoCadastraFuncionarioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCadastraCidade;
+    private javax.swing.JButton botaoCadastraCidade1;
+    private javax.swing.JButton botaoCadastraCidade2;
+    private javax.swing.JButton botaoCadastraCidade3;
+    private javax.swing.JButton botaoCadastraCidade4;
+    private javax.swing.JButton botaoCadastraCidade5;
+    private javax.swing.JButton botaoCadastraCidade6;
+    private javax.swing.JButton botaoCadastraFuncionario;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

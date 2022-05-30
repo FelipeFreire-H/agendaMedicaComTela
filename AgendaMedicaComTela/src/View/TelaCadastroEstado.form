@@ -60,7 +60,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -73,6 +73,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtSiglaCadastraEstado" min="-2" pref="106" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="botaoCadastraEstado" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="157" max="32767" attributes="0"/>
               </Group>
@@ -91,7 +92,9 @@
                       <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtSiglaCadastraEstado" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="69" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="botaoCadastraEstado" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -116,6 +119,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDescricaoCadastraEstadoActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="botaoCadastraEstado">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CADASTRAR"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

@@ -9,12 +9,12 @@ package View;
  *
  * @author felip
  */
-public class TelaCadastraLogradouro extends javax.swing.JPanel {
+public class TelaCadastroCidade extends javax.swing.JPanel {
 
     /**
-     * Creates new form TelaCadastraLogradouro
+     * Creates new form TelaCastroCidade
      */
-    public TelaCadastraLogradouro() {
+    public TelaCadastroCidade() {
         initComponents();
     }
 
@@ -27,28 +27,36 @@ public class TelaCadastraLogradouro extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtDescricaoCadastraLogradouro = new javax.swing.JTextField();
-        txtBairroCadastraLogradouro = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        txtDescricaoCadastraCidade = new javax.swing.JTextField();
+        botaoCadastraCidade = new javax.swing.JButton();
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastra logradouro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        setVerifyInputWhenFocusTarget(false);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastra Cidade", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
         jLabel2.setText("DESCRIÇÃO:");
 
-        jLabel3.setText("BAIRRO:");
+        jLabel3.setText("ESTADO:");
 
-        txtDescricaoCadastraLogradouro.addActionListener(new java.awt.event.ActionListener() {
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        txtDescricaoCadastraCidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDescricaoCadastraLogradouroActionPerformed(evt);
+                txtDescricaoCadastraCidadeActionPerformed(evt);
             }
         });
 
-        txtBairroCadastraLogradouro.addActionListener(new java.awt.event.ActionListener() {
+        botaoCadastraCidade.setText("CADASTRAR");
+        botaoCadastraCidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBairroCadastraLogradouroActionPerformed(evt);
+                botaoCadastraCidadeActionPerformed(evt);
             }
         });
 
@@ -62,12 +70,13 @@ public class TelaCadastraLogradouro extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDescricaoCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtDescricaoCadastraCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtBairroCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(143, Short.MAX_VALUE))
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoCadastraCidade))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -75,58 +84,54 @@ public class TelaCadastraLogradouro extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtDescricaoCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDescricaoCadastraCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtBairroCadastraLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(69, Short.MAX_VALUE))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addComponent(botaoCadastraCidade)
+                .addContainerGap())
         );
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1)
             .addGroup(layout.createSequentialGroup()
-                .addGap(355, 355, 355)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1009, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 5, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(234, 234, 234))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtDescricaoCadastraLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricaoCadastraLogradouroActionPerformed
+    private void txtDescricaoCadastraCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricaoCadastraCidadeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDescricaoCadastraLogradouroActionPerformed
+    }//GEN-LAST:event_txtDescricaoCadastraCidadeActionPerformed
 
-    private void txtBairroCadastraLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBairroCadastraLogradouroActionPerformed
+    private void botaoCadastraCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraCidadeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtBairroCadastraLogradouroActionPerformed
+    }//GEN-LAST:event_botaoCadastraCidadeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCadastraCidade;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField txtBairroCadastraLogradouro;
-    private javax.swing.JTextField txtDescricaoCadastraLogradouro;
-    private javax.swing.JTextField txtSiglaCadastraEstado;
-    private javax.swing.JTextField txtSiglaCadastraEstado1;
+    private javax.swing.JTextField txtDescricaoCadastraCidade;
     // End of variables declaration//GEN-END:variables
 }
