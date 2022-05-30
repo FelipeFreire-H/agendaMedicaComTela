@@ -3,10 +3,6 @@ package Entidades;
 import java.util.Date;
 import lombok.*;
 
-/**
- *
- * @author Ioliveira
- */
 @Getter
 @Setter
 @AllArgsConstructor
