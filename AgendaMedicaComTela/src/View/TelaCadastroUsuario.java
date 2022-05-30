@@ -35,14 +35,14 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
-        txtUserName = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtBotaoCadastrar = new javax.swing.JButton();
-        txtSenhaCadastroUsuario = new javax.swing.JPasswordField();
-        txtCpf = new javax.swing.JFormattedTextField();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        txtNomeCadastraUsuario = new javax.swing.JTextField();
+        txtUserNameCadastraUsuario = new javax.swing.JTextField();
+        txtPerfilCadastraUsuario = new javax.swing.JLabel();
+        botaoCadastraUsuario = new javax.swing.JButton();
+        txtSenhaCadastraUsuario = new javax.swing.JPasswordField();
+        txtCpfCadastraUsuario = new javax.swing.JFormattedTextField();
+        txtDataNascimentoCadastraUsuario = new javax.swing.JFormattedTextField();
+        txtTelefoneCadastraUsuario = new javax.swing.JFormattedTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/banner.PNG"))); // NOI18N
@@ -61,39 +61,39 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
 
         jLabel7.setText("DATA DE NASCIMENTO:");
 
-        txtNome.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNomeCadastraUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        txtUserName.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtUserNameCadastraUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jLabel8.setText("PERFIL:");
+        txtPerfilCadastraUsuario.setText("PERFIL:");
 
-        txtBotaoCadastrar.setText("CADASTRAR");
-        txtBotaoCadastrar.addActionListener(new java.awt.event.ActionListener() {
+        botaoCadastraUsuario.setText("CADASTRAR");
+        botaoCadastraUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBotaoCadastrarActionPerformed(evt);
+                botaoCadastraUsuarioActionPerformed(evt);
             }
         });
 
-        txtSenhaCadastroUsuario.addActionListener(new java.awt.event.ActionListener() {
+        txtSenhaCadastraUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSenhaCadastroUsuarioActionPerformed(evt);
+                txtSenhaCadastraUsuarioActionPerformed(evt);
             }
         });
 
         try {
-            txtCpf.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+            txtCpfCadastraUsuario.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+            txtDataNascimentoCadastraUsuario.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jFormattedTextField2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##)#####-####")));
+            txtTelefoneCadastraUsuario.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##)#####-####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -110,33 +110,33 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtDataNascimentoCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtNomeCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel4)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtUserName))
+                            .addComponent(txtUserNameCadastraUsuario))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel2)
                             .addGap(28, 28, 28)
-                            .addComponent(txtCpf))
+                            .addComponent(txtCpfCadastraUsuario))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel5)
                                 .addComponent(jLabel6))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtSenhaCadastroUsuario)
-                                .addComponent(jFormattedTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))))
+                                .addComponent(txtSenhaCadastraUsuario)
+                                .addComponent(txtTelefoneCadastraUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(txtPerfilCadastraUsuario)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtBotaoCadastrar))
+                    .addComponent(botaoCadastraUsuario))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -145,33 +145,33 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNomeCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCpfCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtUserNameCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTelefoneCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(txtSenhaCadastroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSenhaCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDataNascimentoCadastraUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
+                    .addComponent(txtPerfilCadastraUsuario)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(txtBotaoCadastrar)
+                .addComponent(botaoCadastraUsuario)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -197,19 +197,18 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtBotaoCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBotaoCadastrarActionPerformed
+    private void botaoCadastraUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtBotaoCadastrarActionPerformed
+    }//GEN-LAST:event_botaoCadastraUsuarioActionPerformed
 
-    private void txtSenhaCadastroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaCadastroUsuarioActionPerformed
+    private void txtSenhaCadastraUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaCadastraUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtSenhaCadastroUsuarioActionPerformed
+    }//GEN-LAST:event_txtSenhaCadastraUsuarioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCadastraUsuario;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -217,12 +216,13 @@ public class TelaCadastroUsuario extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton txtBotaoCadastrar;
-    private javax.swing.JFormattedTextField txtCpf;
-    private javax.swing.JTextField txtNome;
-    private javax.swing.JPasswordField txtSenhaCadastroUsuario;
-    private javax.swing.JTextField txtUserName;
+    private javax.swing.JFormattedTextField txtCpfCadastraUsuario;
+    private javax.swing.JFormattedTextField txtDataNascimentoCadastraUsuario;
+    private javax.swing.JTextField txtNomeCadastraUsuario;
+    private javax.swing.JLabel txtPerfilCadastraUsuario;
+    private javax.swing.JPasswordField txtSenhaCadastraUsuario;
+    private javax.swing.JFormattedTextField txtTelefoneCadastraUsuario;
+    private javax.swing.JTextField txtUserNameCadastraUsuario;
     // End of variables declaration//GEN-END:variables
 }
