@@ -9,12 +9,12 @@ package View;
  *
  * @author felip
  */
-public class TelaCadastraCep extends javax.swing.JPanel {
+public class TelaCadastroCep extends javax.swing.JPanel {
 
     /**
      * Creates new form TelaCadastraCep
      */
-    public TelaCadastraCep() {
+    public TelaCadastroCep() {
         initComponents();
     }
 
