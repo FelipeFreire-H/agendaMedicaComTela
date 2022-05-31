@@ -9,13 +9,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Ioliveira
- */
-public class EstadoDAO
-        extends ConexaoComOBancoDeDados
-        implements InterfaceDAO<Integer, Estado> {
+
+public class EstadoDAO extends ConexaoComOBancoDeDados implements InterfaceDAO<Integer, Estado> {
 
     @Override
     public void salvar(Estado estado) {
@@ -26,8 +21,7 @@ public class EstadoDAO
 
         try {
             conectar();
-            PreparedStatement pstm
-                    = conexao.prepareStatement(sql);
+            PreparedStatement pstm = conexao.prepareStatement(sql);
             pstm.setString(1, estado.getDescricao());
             pstm.setString(2, estado.getSigla());
             pstm.execute();

@@ -2,6 +2,7 @@
 package AgendaMedica;
 
 import Persistencia.BuildDeTabelas;
+import View.TelaLogin;
 
 public class AgendaMedicaApp {
     
@@ -11,6 +12,11 @@ public class AgendaMedicaApp {
         
         build.construirTabelas();
         build.inserirDadosIniciais();
+        
+        
+        
+        TelaLogin telaLogin = new TelaLogin();
+        telaLogin.setVisible(true);
         
         
         

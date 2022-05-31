@@ -11,5 +11,10 @@ public class Bairro {
     private int identificador;
     private String descricao;
     private Cidade cidade;
+    
+    @Override
+    public String toString() {
+        return descricao;
+    }
 
 }

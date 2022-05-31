@@ -6,6 +6,7 @@
 package View;
 
 import Controllers.LoginController;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,6 +20,7 @@ public class TelaLogin extends javax.swing.JFrame {
     public TelaLogin() {
         
         initComponents();
+        //instrução para colocar a tela no centro da tela
         setLocationRelativeTo(null);
     }
 
@@ -138,9 +140,30 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void txtbotaoLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtbotaoLoginActionPerformed
 
-        LoginController controller = new LoginController();
+        LoginController loginController = new LoginController();
         
-        controller.login(txtUserName.getText(), String.valueOf(txtSenha.getPassword()));
+        loginController.login(txtUserName.getText(), String.valueOf(txtSenha.getPassword()));
+        
+        
+        if (loginController.login(txtUserName.getText(), String.valueOf(txtSenha.getPassword())) != null) {
+
+            JOptionPane.showMessageDialog(null,
+                    loginController.login(txtUserName.getText(), String.valueOf(txtSenha.getPassword())).getNome()
+                    + ", Seja bem vindo!!!"
+            );
+
+            dispose();
+
+        } else {
+
+            txtSenha.setText(null);
+            txtUserName.setText(null);
+            JOptionPane.showMessageDialog(null, "Username e/ou senha inválidos");
+            new TelaLogin().setVisible(true);
+            dispose();
+        }
+                                                 
+
 
     }//GEN-LAST:event_txtbotaoLoginActionPerformed
 
